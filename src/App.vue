@@ -55,6 +55,12 @@ p {
   font-size: 16px;
   line-height: 1.5;
 }
+a {
+    color: var(--primary-darken);
+    &:hover {
+      color: var(--primary);
+    }
+  }
 :root {
   --primary: #80ddb7;
   --primary-darken: #6cc0ab;

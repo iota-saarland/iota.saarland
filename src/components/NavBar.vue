@@ -17,9 +17,12 @@
         v-on:click.native="navStateOpen = false"
         to="/"
         class="nav-item"
-        active-class="active"
+        exact-active-class="active"
       >
         <span>Startseite</span>
+      </router-link>
+      <router-link v-on:click.native="navStateOpen = false" to="/news" class="nav-item" active-class="active">
+        <span >Neuigkeiten</span>
       </router-link>
     </div>
   </nav>
