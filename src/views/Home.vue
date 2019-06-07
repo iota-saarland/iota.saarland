@@ -1,18 +1,65 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <div class="hero">
+      <h1 class="heading">Willkommen!</h1>
+      <p class="sub-heading">Wir bringen IOTA ins Saarland.</p>
+    </div>
+
+    
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    HelloWorld
+  }
+};
+</script>
+
+<style lang="scss">
+.el-main {
+  padding: 0px !important;
+}
+.home {
+  text-align: center;
+}
+.hero {
+  margin: 0 10px;
+}
+.section {
+  padding: 80px 0;
+  &-background {
+    background-color: var(--light);
+    p {
+      max-width: 600px;
+      margin: 15px auto 30px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .headline-wrapper {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
-</script>
+@media only screen and (max-width: 740px) {
+  .hero {
+      padding-top: 40px;
+  }
+  .headline-wrapper {
+    flex-wrap: wrap;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  .btn-social  {
+      margin-bottom: 5px !important;
+  }
+}
+</style>
