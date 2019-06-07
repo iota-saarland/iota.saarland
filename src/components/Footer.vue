@@ -30,7 +30,7 @@
     <div class="row footer-bottom">
       <div class="footer-bottom-col">© iota.saarland</div>
       <div class="footer-bottom-col">
-        <a href="https://twitter.com/IOTASaar" target="_blank" class="footer-main-link">Twitter</a>
+        <a href="https://twitter.com/IOTASaar" target="_blank" class="footer-main-link">Twitter (@IotaSaar)</a>
       </div>
       <div class="footer-bottom-col">
         <router-link to="imprint" class="footer-main-link">Impressum</router-link>
