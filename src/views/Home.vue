@@ -4,6 +4,7 @@
     <div class="hero">
       <h1 class="heading">Willkommen!</h1>
       <p class="sub-heading">Wir bringen IOTA ins Saarland.</p>
+      <img alt="iota.saarland" class="iota-saarland-logo" src="../assets/logo.svg">
     </div>
 
     
@@ -61,5 +62,10 @@ export default {
   .btn-social  {
       margin-bottom: 5px !important;
   }
+}
+
+.iota-saarland-logo {
+  max-width: 400px;
+  max-height: 400px;
 }
 </style>
