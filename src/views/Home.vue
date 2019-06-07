@@ -9,9 +9,7 @@
     <div class="section section-background knowledge">
       <div class="container">
         <h2>Was ist IOTA?</h2>
-        <p>
-          IOTA ist eine revolutionäre Open-Source-Technologie und Kryptowährung. Sie wird gefördert und bereitgestellt von der IOTA Stiftung mit Hauptsitz in Berlin. Die IOTA-Technologie ermöglicht es Geräten des Internet of Things (IoT) dezentral und verschlüsselt zu kommunizieren.
-        </p>
+        <p>IOTA ist eine revolutionäre Open-Source-Technologie und Kryptowährung. Sie wird gefördert und bereitgestellt von der IOTA Stiftung mit Hauptsitz in Berlin. Die IOTA-Technologie ermöglicht es Geräten des Internet of Things (IoT) dezentral und verschlüsselt zu kommunizieren.</p>
       </div>
     </div>
 
@@ -25,21 +23,35 @@
         <LatestNews/>
       </div>
     </div>
+
+    <div class="section section-background knowledge">
+      <div class="container">
+        <h2>Twitter</h2>
+        <p>Aktuelle Infos gibt es auf unserem Twitter Account <a href="https://twitter.com/IotaSaar">@IotaSaar</a>.</p>
+        <div class="twitter">
+        <Timeline id="iotasaar" sourceType="profile" :options="{ tweetLimit: '3' }"/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import LatestNews from "@/components/LatestNews.vue";
+import { Timeline } from "vue-tweet-embed";
 
 export default {
-
   name: "home",
-  components: {LatestNews}
+  components: { LatestNews, Timeline }
 };
 </script>
 
 <style lang="scss">
+.twitter {
+  margin: 0 auto;
+  max-width: 400px;
+}
 .el-main {
   padding: 0px !important;
 }
