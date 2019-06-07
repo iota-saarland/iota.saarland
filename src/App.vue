@@ -19,9 +19,10 @@ export default {
     components: {NavBar, Footer},
 }
 </script>
-
 <style lang="scss">
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto+Slab:700');
+
 body {
  margin: 0;
  font-family: 'Open Sans', sans-serif;
@@ -29,10 +30,12 @@ body {
  -moz-osx-font-smoothing: grayscale;
  color: var(--dark);
 } 
+
 h1, h2, h3, h4 {
   margin: 0;
   font-weight: 700;
   font-family: 'Roboto Slab', serif;
+
 }
 h1 {
   font-size: 62px;
@@ -53,8 +56,8 @@ p {
   line-height: 1.5;
 }
 :root {
-  --primary: #00B7C5;
-  --primary-darken: #03a3af;
+  --primary: rgb(125, 220, 196);
+  --primary-darken: rgba(108,192,171,1);
   --secondary: #0B5D9E;
   --secondary-2: #5AB0B2;
   --dark: #3D4449;
@@ -78,6 +81,7 @@ p {
 .el-footer {
   padding: 0 0 !important;
 }
+
 .el-button {
   font-family: "Roboto Slab" !important;
   font-weight: bold !important;
@@ -102,17 +106,20 @@ button.el-button.el-button--light {
     background-color: grey !important;
   }
 }
+
 .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
   &:hover {
     color: var(--primary) !important;
   }
 }
+
 .el-pagination.is-background .el-pager li:not(.disabled).active {
   background-color: var(--primary) !important;
   &:hover {
     color: var(--white) !important;
   }
 }
+
 .hero {
   text-align: center;
   padding-top: 80px;
@@ -121,16 +128,19 @@ button.el-button.el-button--light {
     font-size: 2.5em;
   }
 }
+
 .divider {
   height: 5px;
   width: 100px;
   background-color: var(--primary);
   margin: 20px 0;
 }
+
 .container {
   margin: 0 auto;
   width: 1200px;
 }
+
 @media only screen and (max-width: 1260px) {
   .container {
     margin: 0 auto;
@@ -157,3 +167,6 @@ button.el-button.el-button--light {
     line-height: 1.5;
   }
 }
+
+
+</style>
