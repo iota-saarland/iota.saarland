@@ -13,6 +13,27 @@
       </div>
     </div>
 
+     <div class="section news">
+      <div class="container">
+        <div class="headline-wrapper">
+          <h2>Was macht IOTA Saarland?</h2>
+        </div>
+        <div class="divider"></div>
+        <FeatureList />  
+      </div>
+    </div>
+
+
+    <div class="section section-background knowledge">
+      <div class="container">
+        <h2>Twitter</h2>
+        <p>Aktuelle Infos gibt es auf unserem Twitter Account <a href="https://twitter.com/IotaSaar">@IotaSaar</a>.</p>
+        <div class="twitter">
+        <Timeline id="iotasaar" sourceType="profile" :options="{ tweetLimit: '3' }"/>
+        </div>
+      </div>
+    </div>
+
     <div class="section news">
       <div class="container">
         <div class="headline-wrapper">
@@ -24,26 +45,18 @@
       </div>
     </div>
 
-    <div class="section section-background knowledge">
-      <div class="container">
-        <h2>Twitter</h2>
-        <p>Aktuelle Infos gibt es auf unserem Twitter Account <a href="https://twitter.com/IotaSaar">@IotaSaar</a>.</p>
-        <div class="twitter">
-        <Timeline id="iotasaar" sourceType="profile" :options="{ tweetLimit: '3' }"/>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import LatestNews from "@/components/LatestNews.vue";
+import FeatureList from "@/components/FeatureList.vue";
 import { Timeline } from "vue-tweet-embed";
 
 export default {
   name: "home",
-  components: { LatestNews, Timeline }
+  components: { LatestNews, FeatureList, Timeline }
 };
 </script>
 
